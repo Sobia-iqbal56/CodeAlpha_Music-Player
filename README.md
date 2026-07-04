@@ -55,7 +55,7 @@ Music-Player/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/Sobia-iqbal56/CodeAlha_Music-Player.git
+git clone https://github.com/Sobia-iqbal56/CodeAlpha_Music-Player.git
 ```
 
 ### Open the project
