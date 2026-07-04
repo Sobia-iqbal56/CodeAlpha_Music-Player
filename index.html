@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="player">
+
+       <h1>🎵 Music Player</h1>
+
+        <img src="assets/images/cover1.png" alt="Album Cover" id="cover">
+
+        <div class="song-info">
+            <h2 id="title">Song Title</h2>
+            <p id="artist">Artist Name</p>
+        </div>
+
+        <div class="time">
+            <span id="current-time">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+
+        <input type="range" id="progress" value="0" min="0" max="100">
+
+        <div class="controls">
+
+            <button id="prev" aria-label="Previous Song">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+
+            <button id="play" aria-label="Play or Pause">
+                <i class="fa-solid fa-play"></i>
+            </button>
+
+            <button id="next" aria-label="Next Song">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+
+            <button id="shuffle" aria-label="Shuffle">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+
+            <button id="repeat" aria-label="Repeat">
+                <i class="fa-solid fa-repeat"></i>
+            </button>
+
+        </div>
+
+        <div class="volume">
+
+            <label for="volume">
+                <i class="fa-solid fa-volume-high"></i>
+            </label>
+
+            <input type="range" id="volume" min="0" max="100" value="100">
+
+        </div>
+
+        <div class="playlist">
+
+            <h3>Playlist</h3>
+
+            <ul id="playlist"></ul>
+
+        </div>
+
+        <audio id="audio"></audio>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
